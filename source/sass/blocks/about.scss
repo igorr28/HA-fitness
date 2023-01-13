@@ -1,0 +1,57 @@
+.about__container {
+  max-width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 235px;
+  display: flex;
+  align-items: start;
+}
+
+.about__desc {
+  width: calc(355 / 1160) *100%;
+  margin-right: calc(22 / 1160) *100%;
+  margin-left: calc(60 / 1160) *100%;
+  padding-top: 39px;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.21;
+  letter-spacing: 0.03em;
+}
+
+.about__lead {
+  margin-top: 0;
+  margin-bottom: 39px;
+  font-size: 18px;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.about__media {
+  position: relative;
+  width: calc(723 / 1160) *100%;
+}
+
+.about__img-wrapper {
+  width: calc(660 / 723) *100%;
+  margin-left: calc(63 / 723) *100% ;
+}
+
+.about__video-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: -115px;
+}
+
+
