@@ -9,7 +9,6 @@ const createIframe = (link) => {
 const initVideo = (video) => {
   const link = video.querySelector('[data-video-link]');
   const play = video.querySelector('[data-video-play]');
-  //const iframe = video.querySelector('iframe');
   const href = link.href;
   link.removeAttribute('href');
   const iframe = createIframe(href);
@@ -28,9 +27,11 @@ const initVideo = (video) => {
 };
 
 const initVideos = () => {
-  videos.forEach((video) => {
-    initVideo(video);
-  });
+  if (videos.length) {
+    videos.forEach((video) => {
+      initVideo(video);
+    });
+  }
 };
 
 export {initVideos};

@@ -12,9 +12,8 @@
 
   @include vp-767 {
     width: 100%;
-    height: 167px;
     max-width: none;
-    //aspect-ratio: 266/167;
+    aspect-ratio: 320/167;
   }
 }
 
@@ -41,12 +40,18 @@
   height: 100%;
   width: auto;
   margin-left: -7px;
+
+  @include vp-767 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
 }
 
 .video iframe {
   display: none;
-  width: 364px;
-  height: 228px;
+  width: 100%;
+  height: 100%;
 }
 
 .video__play {

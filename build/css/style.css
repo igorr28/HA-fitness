@@ -655,9 +655,86 @@ button,
   padding: 0 103px;
 }
 
-.main-header {
+.page-top {
   min-height: 658px;
-  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+
+.main-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.main-header__logo {
+  margin-right: 40px;
+}
+
+.main-header__contacts {
+  margin-left: auto;
+}
+
+.phones__list {
+  max-width: 800px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 10px;
+  list-style-type: none;
+}
+
+.phones__link {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.promo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__features-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 14px;
+  text-align: right;
+}
+
+.promo__city {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.21;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.promo__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 1.2;
+  text-align: right;
+  letter-spacing: 0.05em;
 }
 
 .about__container {
@@ -713,6 +790,7 @@ button,
   width: 91.2863070539%;
   margin-left: 8.7136929461%;
   overflow: hidden;
+  aspect-ratio: 660/401;
 }
 
 .about__img-wrapper img {
@@ -758,8 +836,8 @@ button,
 
 .video iframe {
   display: none;
-  width: 364px;
-  height: 228px;
+  width: 100%;
+  height: 100%;
 }
 
 .video__play {
@@ -846,9 +924,9 @@ button,
     padding: 0 45px;
   }
 
-  .main-header {
+  .page-top {
     min-height: 554px;
-    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background-image: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .about__container {
@@ -892,11 +970,7 @@ button,
   .about__img-wrapper {
     margin-left: 0;
     width: 100%;
-    height: 345px;
-  }
-
-  .about__img-wrapper {
-    height: 313px;
+    aspect-ratio: 678/345;
   }
 
   .about__video-wrapper {
@@ -925,13 +999,13 @@ button,
     padding: 0 15px;
   }
 
-  .main-header {
+  .page-top {
     min-height: 491px;
-    background-image: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background-image: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .about__container {
-    padding-top: 70px;
+    padding-top: 63px;
     padding-bottom: 70px;
     padding-left: 0;
     padding-right: 0;
@@ -941,16 +1015,27 @@ button,
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 29px;
     text-align: left;
   }
 
   .about__title {
     margin-left: 0;
+    margin-bottom: 6px;
     font-size: 32px;
+  }
+
+  .about__lead {
+    margin-bottom: 22px;
   }
 
   .about__text {
     width: 88.9655172414%;
+  }
+
+  .about__img-wrapper {
+    margin-bottom: 40px;
+    aspect-ratio: 320/312;
   }
 
   .about__img-wrapper img {
@@ -969,8 +1054,14 @@ button,
 
   .video {
     width: 100%;
-    height: 167px;
     max-width: none;
+    aspect-ratio: 320/167;
+  }
+
+  .video img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
   }
 }
 

@@ -17,7 +17,7 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
+    padding-top: 63px;
     padding-bottom: 70px;
     padding-left: 0;
     padding-right: 0;
@@ -43,6 +43,7 @@
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 29px;
     text-align: left;
   }
 }
@@ -64,6 +65,7 @@
 
   @include vp-767 {
     margin-left: 0;
+    margin-bottom: 6px;
     font-size: 32px;
   }
 }
@@ -75,6 +77,10 @@
 
   @include vp-1199 {
     margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
   }
 }
 
@@ -105,17 +111,19 @@
 
 .about__img-wrapper {
   width: calc(660 / 723) *100%;
-  margin-left: calc(63 / 723) *100% ;
+  margin-left: calc(63 / 723) *100%;
   overflow: hidden;
+  aspect-ratio: 660/401;
 
   @include vp-1199 {
     margin-left: 0;
     width: 100%;
-    height: 345px;
+    aspect-ratio: 678/345;
   }
 
-  @include vp-1199 {
-    height: 313px;
+  @include vp-767 {
+    margin-bottom: 40px;
+    aspect-ratio: 320/312;
   }
 }
 
@@ -144,8 +152,5 @@
     position: relative;
     left: 0;
     transform: none;
-
   }
 }
-
-

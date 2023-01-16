@@ -1,0 +1,20 @@
+.phones__list {
+  max-width: 800px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+  column-gap: 20px;
+  row-gap: 10px;
+  list-style-type: none;
+}
+
+.phones__link {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+}
