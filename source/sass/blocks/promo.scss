@@ -1,5 +1,76 @@
 .promo__container {
   display: flex;
+  align-items: start;
+
+  @include vp-1199 {
+    padding-top: 17px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+  }
+}
+
+.promo__text {
+  width: calc(395 / 1168) * 100%;
+  margin-right: calc(68 / 1168) * 100%;
+  padding-top: 92px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    width: calc(324 / 678) * 100%;
+    margin-right: calc(30 / 678) * 100%;
+    padding-top: 50px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 63px;
+  }
+}
+
+.promo__desc {
+  margin-bottom: 47px;
+  display: flex;
+  align-items: start;
+
+  @include vp-1199 {
+    margin-bottom: 34px;
+  }
+
+  @include vp-1199 {
+    margin-bottom: 20px;
+  }
+}
+
+.promo__features {
+  width: calc(132 / 395) * 100%;
+  align-self: flex-end;
+  margin-bottom: 38px;
+
+  @include vp-1199 {
+    width: calc(113 / 324) * 100%;
+    margin-bottom: 23px;
+  }
+
+  @include vp-767 {
+    width: calc(113 / 290) * 100%;
+    margin-bottom: 34px;
+  }
+}
+
+.promo__heading {
+  width: calc(265 / 395) * 100%;
+
+  @include vp-1199 {
+    width: calc(211 / 324) * 100%;
+  }
+
+  @include vp-767 {
+    width: calc(177 / 290) * 100%;
+  }
 }
 
 .promo__features-list {
@@ -12,19 +83,79 @@
 }
 
 .promo__city {
+  margin-top: 0;
+  margin-bottom: 13px;
+  padding-right: 49px;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 48px;
   line-height: 1.21;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-align: right;
+
+  @include vp-1199 {
+    padding-right: 6px;
+    margin-bottom: 5px;
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
 }
 
 .promo__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: -3px;
   font-family: $ff-alumni;
   font-weight: 600;
-  font-size: 92px;
+  font-size: 94px;
   line-height: 1.2;
   text-align: right;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-right: -2px;
+    font-size: 74px;
+    text-transform: none;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-left: -10px;
+  }
+}
+
+.promo__link {
+  align-self: flex-end;
+}
+
+.promo__img-wrapper {
+  width: calc(504 / 1168) * 100%;
+  margin-top: -17px;
+  aspect-ratio: 500/556;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: calc(324 / 678) * 100%;
+    aspect-ratio: 324/390;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.promo__img-wrapper img {
+  @include vp-1199 {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    margin-left: -14px;
+  }
 }

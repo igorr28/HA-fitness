@@ -5,8 +5,26 @@
 
 .main-header__logo {
   margin-right: 40px;
+  margin-top: 9px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
+
+  @include vp-1199 {
+    margin-right: 30px;
+  }
 }
 
 .main-header__contacts {
   margin-left: auto;
+  flex-grow: 1;
+
+  @include vp-1199 {
+    margin-top: -6px;
+  }
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
 }

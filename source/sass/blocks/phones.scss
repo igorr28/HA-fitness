@@ -1,5 +1,7 @@
 .phones__list {
-  max-width: 800px;
+  position: relative;
+  z-index: 5;
+  //max-width: 865px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -7,14 +9,56 @@
   grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
   column-gap: 20px;
   row-gap: 10px;
+  justify-items: end;
   list-style-type: none;
+
+  @include vp-1199 {
+    //max-width: 550px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  @include vp-767 {
+    //max-width: 180px;
+    grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
+  }
 }
 
 .phones__link {
+  display: block;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  transition: $trans-default;
+
+  @include vp-1199{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767{
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  @include hover {
+    transform: scale(1.1);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-sapphire;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
