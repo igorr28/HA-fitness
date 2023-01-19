@@ -1,0 +1,19 @@
+.games__container {
+  padding-top: 120px;
+  padding-bottom: 56px;
+  display: flex;
+  outline: 1px solid green;
+}
+
+.games__text {
+  width: calc(500 / 1160) * 100%;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  outline: 1px solid blue;
+}
+
+.games__img-wrapper {
+  width: calc(660 / 1160) * 100%;
+  background-color: $color-blue;
+  outline: 1px solid red;
+}
