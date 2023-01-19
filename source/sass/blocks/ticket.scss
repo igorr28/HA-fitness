@@ -1,0 +1,94 @@
+.ticket {
+  width: 100%;
+  padding: 55px calc(70 / 360) * 100% 60px;
+  text-align: center;
+  background-color: $color-default-white;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent;
+
+  @include vp-1199 {
+    padding-right: calc(111 / 442) * 100%;
+    padding-left: calc(111 / 442) * 100%;
+  }
+
+  @include vp-767 {
+    padding-top: 43px;
+    padding-bottom: 46px;
+    padding-right: calc(35 / 290) * 100%;
+    padding-left: calc(35 / 290) * 100%;
+  }
+
+  @include hover {
+    border-image: linear-gradient(to right bottom, #d10a42, #00359f) 1;
+  }
+
+  &:hover .btn--secondary {
+    border-color: transparent;
+    color: $color-default-white;
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
+    background-repeat: no-repeat;
+  }
+}
+
+.ticket__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+
+  @include vp-767 {
+    font-size: 22px;
+  }
+}
+
+.ticket__desc {
+  margin-top: 0;
+  margin-bottom: 66px;
+  color: #495a7d;
+
+  @include vp-767 {
+    margin-bottom: 56px;
+  }
+}
+
+.ticket__price {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-size: 60px;
+  color: #103aae;
+
+  @include vp-767 {
+    font-size: 48px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    top: -53px;
+    left: 50%;
+    z-index: -1;
+    font-size: 100px;
+    color: rgba(#e8e8e8, 0.48);
+    transform: translateX(-50%);
+
+    @include vp-767 {
+      top: -44px;
+      font-size: 80px;
+    }
+  }
+}
+
+.ticket__rouble {
+  margin-left: 11px;
+
+  @include vp-767 {
+    margin-left: 9px;
+  }
+}

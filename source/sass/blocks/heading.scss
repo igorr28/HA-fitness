@@ -1,0 +1,15 @@
+.heading {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+  }
+}
