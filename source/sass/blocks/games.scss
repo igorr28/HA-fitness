@@ -2,18 +2,181 @@
   padding-top: 120px;
   padding-bottom: 56px;
   display: flex;
-  outline: 1px solid green;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 46px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    flex-direction: column;
+  }
 }
 
 .games__text {
   width: calc(500 / 1160) * 100%;
+  padding: 81px 78px 87px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
   background-color: $color-torch-red;
   color: $color-default-white;
-  outline: 1px solid blue;
+
+  @include vp-1199 {
+    width: calc(292 / 678) * 100%;
+    padding-top: 47px;
+    padding-bottom: 51px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-left: 43px;
+    padding-bottom: 50px;
+  }
+}
+
+.games__title {
+  width: calc(201 / 343) * 100%;
+  margin-right: calc(50 / 343) * 100%;
+  margin-top: 4px;
+  margin-bottom: 28px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 0.96;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+}
+
+.games__calendar {
+  width: calc(92 / 343) * 100%;
+  margin-top: 0;
+  margin-bottom: 17px;
+
+  @include vp-1199 {
+    margin-bottom: 5px;
+  }
+}
+
+.games__calendar-title {
+  font-size: 18px;
+  padding-bottom: 5px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    padding-bottom: 2px;
+  }
+}
+
+.games__calendar dd {
+  margin-left: 0;
+  border-top: 1px solid $color-default-white;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+
+    @include vp-1199 {
+      margin-bottom: 1px;
+    }
+  }
+}
+
+.games__calendar-value {
+  font-weight: 700;
+  font-size: 40px;
+
+  @include vp-1199 {
+    font-size: 24px;
+  }
+
+  &--date {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    column-gap: 5px;
+
+    @include vp-1199 {
+      column-gap: 2px;
+    }
+  }
+
+  &--time {
+    line-height: 1.1;
+  }
+}
+
+.games__calendar-date {
+  line-height: 1.1;
+  grid-row: span 2;
+}
+
+.games__calendar-month {
+  font-weight: 400;
+  font-size: 14px;
+
+  @include vp-1199 {
+    font-size: 10px;
+  }
+}
+
+.games__calendar-year {
+  font-weight: 400;
+  font-size: 14px;
+
+  @include vp-1199 {
+    font-size: 10px;
+  }
+}
+
+.games__text p {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+
+  @include vp-1199 {
+    font-size: 12px;
+  }
+}
+
+.games__link {
+  width: 100%;
+  margin-top: 26px;
+  padding: 24px;
+
+  @include vp-1199 {
+    padding: 11px;
+    margin-top: 10px;
+    border-width: 2px;
+  }
 }
 
 .games__img-wrapper {
   width: calc(660 / 1160) * 100%;
   background-color: $color-blue;
-  outline: 1px solid red;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: calc(386 / 678) * 100%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    aspect-ratio: 290/292;
+  }
+}
+
+.games__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideos} from './modules/video.js';
 import {scrollTo} from './modules/smooth-scroll';
 import {initTabs} from './modules/tabs';
+import './modules/slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
