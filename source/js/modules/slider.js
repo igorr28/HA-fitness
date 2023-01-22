@@ -10,6 +10,7 @@ let mySwiper = new Swiper(slider, {
     enabled: true,
     onlyInViewport: false,
   },
+  loop: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
