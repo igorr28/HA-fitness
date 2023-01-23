@@ -8,7 +8,7 @@
   }
 
   &:hover .card__figure-title {
-    display: none;;
+    display: none;
   }
 }
 
@@ -19,7 +19,7 @@
   z-index: 10;
   width: 100%;
   height: 100%;
-  padding: 58px;
+  padding: 52px 33px 54px 32px;
   display: flex;
   flex-direction: column;
   background-color: rgba(16, 38, 84, 0.89);
@@ -27,19 +27,17 @@
   transition: $trans-default;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 
-  @include vp-1023 {
-    padding: 29px 35px 35px;
+  @include vp-1199 {
+
   }
 
   @include vp-767 {
-    padding-left: 25px;
-    padding-right: 25px;
+
   }
 }
 
 .card__desc {
   overflow: auto;
-  margin-bottom: 10px;
 
   &::-webkit-scrollbar {
     width: 0;
@@ -48,19 +46,50 @@
 
 .card__content h3 {
   margin-top: 0;
-  margin-bottom: 16px;
-  font-weight: 500;
+  margin-bottom: -5px;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 1.5;
+  text-align: center;
 
   @include vp-767 {
-    margin-bottom: 14px;
+
   }
 }
 
-.card__content ul {
+.card__content p {
   margin-top: 0;
+  margin-bottom: 15px;
+  color: #b6bdcc;
+  text-align: center;
+}
+
+.card__content ul {
+  margin-top: 36px;
   margin-bottom: 0;
+  padding-left: 22px;
+  list-style-type: none;
+}
+
+.card__content li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+
+  &::before {
+    display: block;
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    margin-top: 6px;
+    margin-right: 10px;
+    content: "";
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 }
 
 .card__figure {
@@ -78,51 +107,44 @@
   @include vp-767 {
     aspect-ratio: 226/274;
   }
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: green;
-  }
 }
 
 .card__figure img {
 
-  max-width: none;
-  width: auto;
+  // max-width: none;
+  // width: auto;
+  // height: 100%;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 
   @include vp-1023 {
 
   }
 
   @include vp-767 {
-    
+
   }
 }
 
 .card__figure-title {
   position: absolute;
-  bottom: 23px;
-  left: calc(30 / 260) * 100%;
-  right: calc(30 / 260) * 100%;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
   z-index: 5;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 1.5;
   color: $color-default-white;
 
-  @include vp-1023 {
-    bottom: 27px;
+  @include vp-1199 {
+
   }
 
   @include vp-767 {
-    bottom: 18px;
-    left: calc(25 / 260) * 100%;
+
   }
 }

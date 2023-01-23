@@ -13,8 +13,8 @@ let mySwiper = new Swiper(slider, {
   loop: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.coaches__button--prev',
+    prevEl: '.coaches__button--next',
   },
 
   // loop: true,
