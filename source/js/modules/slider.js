@@ -1,11 +1,9 @@
 import '../vendor/swiper.js';
 
-console.log('slider');
 
-const slider = document.querySelector('.swiper');
-console.log(slider);
+const sliderCoaches = document.querySelector('.coaches__slider');
 
-let mySwiper = new Swiper(slider, {
+let swiperCoaches = new Swiper(sliderCoaches, {
   keyboard: {
     enabled: true,
     onlyInViewport: false,

@@ -2210,7 +2210,7 @@ button,
 .coaches__button {
   position: absolute;
   top: 50%;
-  left: -50px;
+  left: -56px;
   right: auto;
   z-index: 100;
   display: block;
@@ -2238,7 +2238,7 @@ button,
 }
 
 .coaches__button--next {
-  right: -50px;
+  right: -57px;
   left: auto;
   -webkit-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
@@ -2376,6 +2376,181 @@ button,
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
+}
+
+.advantages {
+  background-image: -o-linear-gradient(left, #ffffff 33px, #f8f9fc 33px);
+  background-image: linear-gradient(to right, #ffffff 33px, #f8f9fc 33px);
+}
+
+.advantages__container {
+  padding-top: 146px;
+  padding-bottom: 91px;
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.advantages__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32.6923076923% 23.0769230769% 32.6923076923%;
+  grid-template-columns: 32.6923076923% 23.0769230769% 32.6923076923%;
+  -webkit-column-gap: 5.7692307692%;
+  -moz-column-gap: 5.7692307692%;
+  column-gap: 5.7692307692%;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  padding-left: 5px;
+}
+
+.advantages__item--column {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #1c3374;
+  margin-top: 8px;
+  padding-top: 50px;
+  padding-bottom: 66px;
+  padding-left: 34px;
+  padding-right: 34px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantages__item--area {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding-bottom: 66px;
+  padding-left: 21px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item--parking {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding-bottom: 66px;
+  padding-left: 2px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item--gym {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.advantages__item--comfort {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding-top: 70px;
+  padding-left: 21px;
+}
+
+.advantages__item--expirience {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding-top: 70px;
+  padding-left: 2px;
+}
+
+.advantages__value {
+  margin-right: 28px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.advantages__item--column .advantages__value {
+  margin: 0 auto 33px;
+}
+
+.advantages__amount {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 0.96;
+  background: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
+  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.advantages__item--column .advantages__amount {
+  margin-bottom: 5px;
+  font-size: 74px;
+  color: #ffffff;
+}
+
+.advantages__unit {
+  font-size: 14px;
+  color: #2e35ac;
+}
+
+.advantages__item--column .advantages__unit {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.advantages__desc h3 {
+  margin-top: 10px;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.advantages__desc p {
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 10px;
 }
 
 .main-footer {
@@ -2687,6 +2862,19 @@ button,
 
   .games__img-wrapper {
     width: 56.9321533923%;
+  }
+
+  .advantages {
+    background-color: #f8f9fc;
+  }
+
+  .advantages__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__title {
+    margin-bottom: 50px;
   }
 }
 

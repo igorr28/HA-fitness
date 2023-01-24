@@ -1,0 +1,146 @@
+.advantages {
+  background-image: linear-gradient(to right, $color-default-white 33px, $color-ghost-white 33px);
+
+  @include vp-1199 {
+    background-color: $color-ghost-white;
+  }
+}
+
+.advantages__container {
+  padding-top: 146px;
+  padding-bottom: 91px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 44px;
+  text-align: center;
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: calc(340 / 1040) * 100% calc(240 / 1040) * 100% calc(340 / 1040) * 100%;
+  column-gap: calc(60 / 1040) * 100%;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-left: 5px;
+
+  &--column {
+    height: 100%;
+    flex-direction: column;
+    background-color: $color-blue;
+    margin-top: 8px;
+    padding-top: 50px;
+    padding-bottom: 66px;
+    padding-left: 34px;
+    padding-right: 34px;
+    color: $color-default-white;
+    text-align: center;
+  }
+
+
+  &--area {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   padding-bottom: 66px;
+   padding-left: 21px;
+   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+
+  &--parking {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-bottom: 66px;
+    padding-left: 2px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+   }
+
+   &--gym{
+    grid-column: 2/3;
+    grid-row: 1/3;
+   }
+
+   &--comfort {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 70px;
+    padding-left: 21px;
+   }
+
+   &--expirience {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding-top: 70px;
+    padding-left: 2px;
+   }
+}
+
+.advantages__value {
+  margin-right: 28px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item--column .advantages__value {
+  margin: 0 auto 33px;
+}
+
+.advantages__amount {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 0.96;
+  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  background-clip: text;
+  color: transparent;
+}
+
+.advantages__item--column .advantages__amount {
+  margin-bottom: 5px;
+  font-size: 74px;
+  color: $color-default-white;
+}
+
+.advantages__unit {
+  font-size: 14px;
+  color: #2e35ac;
+}
+
+.advantages__item--column .advantages__unit {
+  color: $color-default-white;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.advantages__desc h3 {
+  margin-top: 10px;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.advantages__desc p {
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
