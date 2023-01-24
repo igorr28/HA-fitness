@@ -1,5 +1,5 @@
-import '../vendor/swiper.js';
-
+/* eslint-disable no-unused-vars */
+import Swiper, {Navigation} from 'swiper';
 
 const sliderCoaches = document.querySelector('.coaches__slider');
 
@@ -14,8 +14,6 @@ let swiperCoaches = new Swiper(sliderCoaches, {
     nextEl: '.coaches__button--prev',
     prevEl: '.coaches__button--next',
   },
-
-  // loop: true,
 
   breakpoints: {
     320: {
@@ -32,4 +30,4 @@ let swiperCoaches = new Swiper(sliderCoaches, {
       initialSlide: 0,
     },
   },
-})
+});

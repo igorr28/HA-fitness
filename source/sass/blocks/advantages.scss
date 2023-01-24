@@ -3,6 +3,7 @@
 
   @include vp-1199 {
     background-color: $color-ghost-white;
+    background-image: none;
   }
 }
 
@@ -11,8 +12,13 @@
   padding-bottom: 91px;
 
   @include vp-1199 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 92px;
+    padding-bottom: 85px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 63px;
   }
 }
 
@@ -22,7 +28,8 @@
   text-align: center;
 
   @include vp-1199 {
-    margin-bottom: 50px;
+    margin-left: -22px;
+    margin-bottom: 43px;
   }
 }
 
@@ -35,6 +42,18 @@
   display: grid;
   grid-template-columns: calc(340 / 1040) * 100% calc(240 / 1040) * 100% calc(340 / 1040) * 100%;
   column-gap: calc(60 / 1040) * 100%;
+
+  @include vp-1199 {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(30 / 678) * 100%;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    column-gap: 0;
+  }
 }
 
 .advantages__item {
@@ -43,9 +62,19 @@
   align-items: start;
   padding-left: 5px;
 
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &--column {
     height: 100%;
     flex-direction: column;
+    align-items: center;
     background-color: $color-blue;
     margin-top: 8px;
     padding-top: 50px;
@@ -54,15 +83,37 @@
     padding-right: 34px;
     color: $color-default-white;
     text-align: center;
+
+    @include vp-1199 {
+      width: calc(442 / 678) * 100%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 34px;
+      padding-bottom: 32px;
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+
+    @include vp-767 {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      padding-top: 38px;
+      padding-bottom: 47px;
+    }
   }
 
 
   &--area {
-   grid-column: 1/2;
-   grid-row: 1/2;
-   padding-bottom: 66px;
-   padding-left: 21px;
-   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-bottom: 66px;
+    padding-left: 21px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+    @include vp-1199 {
+      padding-bottom: 35px;
+      border-bottom: none;
+    }
   }
 
   &--parking {
@@ -71,52 +122,119 @@
     padding-bottom: 66px;
     padding-left: 2px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-   }
 
-   &--gym{
+    @include vp-1199 {
+      padding-bottom: 35px;
+      grid-column: 2/3;
+      border-bottom: none;
+    }
+
+    @include vp-767 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-bottom: 44px;
+    }
+  }
+
+  &--gym {
     grid-column: 2/3;
     grid-row: 1/3;
-   }
 
-   &--comfort {
+    @include vp-1199 {
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+
+    @include vp-767 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  }
+
+  &--comfort {
     grid-column: 1/2;
     grid-row: 2/3;
     padding-top: 70px;
     padding-left: 21px;
-   }
 
-   &--expirience {
+    @include vp-1199 {
+      grid-row: 3/4;
+      padding-top: 43px;
+    }
+
+    @include vp-767 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+  }
+
+  &--expirience {
     grid-column: 3/4;
     grid-row: 2/3;
     padding-top: 70px;
     padding-left: 2px;
-   }
+
+    @include vp-1199 {
+      padding-top: 43px;
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    @include vp-767 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      padding-top: 32px;
+    }
+  }
 }
 
 .advantages__value {
-  margin-right: 28px;
+  margin-right: 30px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+
+  @include vp-767 {
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 9px;
+  }
 }
 
 .advantages__item--column .advantages__value {
   margin: 0 auto 33px;
+
+  @include vp-1199 {
+    margin-bottom: 13px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__amount {
   font-weight: 700;
   font-size: 71px;
   line-height: 0.96;
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
   color: transparent;
+
+  @include vp-1199 {
+    margin-bottom: -3px;
+    font-size: 58px;
+  }
 }
 
 .advantages__item--column .advantages__amount {
   margin-bottom: 5px;
   font-size: 74px;
   color: $color-default-white;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__unit {
@@ -128,6 +246,10 @@
   color: $color-default-white;
   font-weight: 700;
   font-size: 26px;
+
+  @include vp-1199 {
+    font-size: 22px;
+  }
 }
 
 .advantages__desc h3 {
@@ -136,6 +258,16 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
+
+  @include vp-1199 {
+    margin-top: 4px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .advantages__desc p {
@@ -143,4 +275,22 @@
   font-weight: 300;
   line-height: 140%;
   margin-bottom: 10px;
+
+  @include vp-767 {
+    width: calc(228 / 290) * 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item--column .advantages__desc {
+  @include vp-1199 {
+    width: calc(180 / 442) * 100%;
+  }
+
+  @include vp-767 {
+    width: calc(228 / 290) * 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
