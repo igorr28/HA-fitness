@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideos} from './modules/video.js';
 import {scrollTo} from './modules/smooth-scroll';
 import {initTabs} from './modules/tabs';
+import {initFormValidation} from './modules/form-validation';
+import {initMask} from './modules/mask-phone';
 import './modules/slider';
 // ---------------------------------
 
@@ -20,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initVideos();
   scrollTo();
   initTabs();
+  initFormValidation();
+  initMask();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

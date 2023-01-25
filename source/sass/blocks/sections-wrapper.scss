@@ -1,0 +1,20 @@
+.sections-wrapper {
+  background-image: linear-gradient(to right, $color-sapphire 50%, transparent 50%);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, $color-sapphire 50%, $color-slate-grey 50%) 1;
+
+  @include vp-1199 {
+    background-image: none;
+    border: none;
+  }
+}
+
+.sections-wrapper__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+}

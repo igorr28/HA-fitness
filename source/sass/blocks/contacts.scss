@@ -1,0 +1,138 @@
+.contacts {
+  padding-top: 56px;
+  padding-left: 120px;
+  padding-bottom: 70px;
+
+  @include vp-1199 {
+    width: calc(100% + 90px);
+    margin-left: -45px;
+    padding-left: 0;
+    padding-top: 70px;
+  }
+
+  @include vp-767 {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+}
+
+.contacts__container {
+  @include vp-1199 {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 133px;
+    padding-right: 163px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.contacts__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contacts__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  &--left {
+    padding-right: 60px;
+    border-right: 1px solid $color-slate-grey;
+
+    @include vp-1199 {
+      padding-right: 48px;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+      margin-bottom: 35px;
+      border: none;
+    }
+  }
+
+  &--right {
+    padding-left: 60px;
+
+    @include vp-1199 {
+      padding-left: 48px;
+    }
+
+    @include vp-767 {
+      padding-left: 0;
+    }
+  }
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @include vp-767 {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.contacts__item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 20px;
+  }
+}
+
+.contacts__item p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1;
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+}
+
+.contacts__item a {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 1;
+  transition: $trans-default;
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include hover {
+    color: $color-crimson;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

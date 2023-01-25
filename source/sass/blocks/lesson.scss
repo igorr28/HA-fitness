@@ -1,0 +1,54 @@
+.lesson {
+  padding-top: 56px;
+  padding-bottom: 70px;
+  padding-right: 170px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    width: calc(100% + 90px);
+    margin-left: -45px;
+    padding-right: 0;
+    padding-top: 70px;
+    background-color: $color-sapphire;
+  }
+
+  @include vp-767 {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+}
+
+.lesson__container {
+  @include vp-1199 {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 133px;
+    padding-right: 163px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.lesson__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: $ff-alumni;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+  }
+}

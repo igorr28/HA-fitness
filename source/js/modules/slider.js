@@ -1,8 +1,9 @@
-/* eslint-disable no-unused-vars */
-import Swiper, {Navigation} from 'swiper';
+import '../vendor/swiper.js';
 
 const sliderCoaches = document.querySelector('.coaches__slider');
+const sliderComments = document.querySelector('.comments__slider');
 
+// eslint-disable-next-line no-undef
 let swiperCoaches = new Swiper(sliderCoaches, {
   keyboard: {
     enabled: true,
@@ -30,4 +31,21 @@ let swiperCoaches = new Swiper(sliderCoaches, {
       initialSlide: 0,
     },
   },
+});
+
+let swiperComments = new Swiper(sliderComments, {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  loop: true,
+
+  navigation: {
+    nextEl: '.comments__button--prev',
+    prevEl: '.comments__button--next',
+  },
+
+  autoHeight: true,
+  initialSlide: 0,
+  slidesPerView: 1,
 });
