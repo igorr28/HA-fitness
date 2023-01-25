@@ -12,7 +12,7 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     column-gap: 0;
-    row-gap: 40px;
+    row-gap: 28px;
   }
 }
 
@@ -28,12 +28,16 @@
   padding-left: 0;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   background-color: transparent;
   border: none;
   font-size: 16px;
   color: $color-default-white;
   transition: $trans-default;
+
+  @include vp-767 {
+    padding-bottom: 5px;
+  }
 
   &:hover {
     outline: 2px solid $color-default-white;
@@ -71,6 +75,7 @@
 }
 
 .form__button {
+  padding: 16px;
   grid-column: 1/3;
   background-color: transparent;
   font-size: 14px;
@@ -78,5 +83,6 @@
 
   @include vp-767 {
     grid-column: 1/2;
+    margin-top: 9px;
   }
 }

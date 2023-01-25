@@ -24,8 +24,9 @@
     content: "";
     width: 321px;
     height: 384px;
-    background-image: url("../img/background/tickets.png");
+    background-image: url("../img/background/tickets.webp");
     background-repeat: no-repeat;
+    background-size: cover;
     transform: rotate(150deg);
 
     @include vp-1199 {
@@ -36,6 +37,10 @@
 
     @include vp-767 {
       display: none;
+    }
+
+    @include retina {
+      background-image: url("../img/background/tickets@2x.webp");
     }
   }
 }

@@ -1,18 +1,21 @@
 .contacts {
   padding-top: 56px;
-  padding-left: 120px;
-  padding-bottom: 70px;
+  padding-left: 124px;
+  padding-bottom: 56px;
 
   @include vp-1199 {
     width: calc(100% + 90px);
     margin-left: -45px;
     padding-left: 0;
-    padding-top: 70px;
+    padding-top: 61px;
+    padding-bottom: 62px;
   }
 
   @include vp-767 {
     width: calc(100% + 30px);
     margin-left: -15px;
+    padding-top: 65px;
+    padding-bottom: 61px;
   }
 }
 
@@ -32,10 +35,12 @@
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
+  margin-left: -3px;
 
   @include vp-1199 {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
+    margin-left: 0;
   }
 }
 
@@ -43,8 +48,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  @include vp-1199 {
+    display: flex;
+  }
+
   @include vp-767 {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
@@ -55,7 +64,7 @@
   list-style-type: none;
 
   &--left {
-    padding-right: 60px;
+    padding-right: 54px;
     border-right: 1px solid $color-slate-grey;
 
     @include vp-1199 {
@@ -64,7 +73,7 @@
 
     @include vp-767 {
       padding-right: 0;
-      margin-bottom: 35px;
+      margin-bottom: 23px;
       border: none;
     }
   }
@@ -84,21 +93,38 @@
 
 .contacts__item {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @include vp-1199 {
+      margin-bottom: 26px;
+    }
 
     @include vp-767 {
-      margin-bottom: 35px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &--email {
+    margin-top: -10px;
+
+    @include vp-1199 {
+      margin-top: -6px;
     }
   }
 }
 
 .contacts__item h3 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 700;
+  font-size: 16px;
 
   @include vp-1199 {
     font-size: 20px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 11px;
   }
 }
 
@@ -114,6 +140,7 @@
 }
 
 .contacts__item a {
+  margin-top: -12px;
   display: inline-flex;
   vertical-align: middle;
   font-size: 14px;
@@ -121,6 +148,7 @@
   transition: $trans-default;
 
   @include vp-1199 {
+    margin-top: -6px;
     font-size: 18px;
   }
 
