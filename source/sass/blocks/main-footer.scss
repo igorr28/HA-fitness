@@ -3,4 +3,26 @@
   background-color: #030a1a;
   padding-top: 41px;
   padding-bottom: 32px;
+  color: $color-default-white;
+}
+
+.main-footer__container {
+  display: flex;
+  align-items: start;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.main-footer__socials {
+  margin-left: calc(266 / 1160) * 100%;
+
+  @include vp-1199 {
+    margin-left: calc(52 / 678) * 100%;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }

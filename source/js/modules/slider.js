@@ -33,12 +33,12 @@ let swiperCoaches = new Swiper(sliderCoaches, {
   },
 });
 
+// eslint-disable-next-line no-undef
 let swiperComments = new Swiper(sliderComments, {
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
-  loop: true,
 
   navigation: {
     nextEl: '.comments__button--prev',
@@ -49,3 +49,6 @@ let swiperComments = new Swiper(sliderComments, {
   initialSlide: 0,
   slidesPerView: 1,
 });
+
+swiperCoaches.changeDirection('horizontal', false);
+swiperComments.changeDirection('horizontal', false);

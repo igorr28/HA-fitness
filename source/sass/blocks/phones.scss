@@ -1,7 +1,6 @@
 .phones__list {
   position: relative;
   z-index: 5;
-  //max-width: 865px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -13,12 +12,10 @@
   list-style-type: none;
 
   @include vp-1199 {
-    //max-width: 550px;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
   @include vp-767 {
-    //max-width: 180px;
     grid-template-columns: repeat(auto-fit, minmax(117px, 1fr));
   }
 }
@@ -49,7 +46,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid $color-sapphire;
+    outline: 2px solid $color-default-white;
     outline-offset: 2px;
   }
 
