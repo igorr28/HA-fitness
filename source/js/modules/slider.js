@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import '../vendor/swiper.js';
 
 const sliderCoaches = document.querySelector('.coaches__slider');
@@ -9,12 +10,13 @@ let swiperCoaches = new Swiper(sliderCoaches, {
     enabled: true,
     onlyInViewport: false,
   },
-  loop: true,
 
   navigation: {
-    nextEl: '.coaches__button--prev',
-    prevEl: '.coaches__button--next',
+    nextEl: '.coaches__button--next',
+    prevEl: '.coaches__button-prev',
   },
+
+  loop: true,
 
   breakpoints: {
     320: {
@@ -41,14 +43,11 @@ let swiperComments = new Swiper(sliderComments, {
   },
 
   navigation: {
-    nextEl: '.comments__button--prev',
-    prevEl: '.comments__button--next',
+    nextEl: '.comments__button--next',
+    prevEl: '.comments__button--prev',
   },
 
   autoHeight: true,
   initialSlide: 0,
   slidesPerView: 1,
 });
-
-swiperCoaches.changeDirection('horizontal', false);
-swiperComments.changeDirection('horizontal', false);

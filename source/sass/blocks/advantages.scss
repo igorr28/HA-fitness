@@ -1,10 +1,5 @@
 .advantages {
-  background-image: linear-gradient(to right, $color-default-white 33px, $color-ghost-white 33px);
-
-  @include vp-1199 {
-    background-color: $color-ghost-white;
-    background-image: none;
-  }
+  background-color: $color-ghost-white;
 }
 
 .advantages__container {
@@ -143,6 +138,7 @@
   &--gym {
     grid-column: 2/3;
     grid-row: 1/3;
+    height: 92%;
 
     @include vp-1199 {
       grid-column: 1/3;

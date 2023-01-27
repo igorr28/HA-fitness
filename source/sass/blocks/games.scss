@@ -164,9 +164,11 @@
   width: calc(660 / 1160) * 100%;
   background-color: $color-blue;
   overflow: hidden;
+  aspect-ratio: 660/500;
 
   @include vp-1199 {
     width: calc(386 / 678) * 100%;
+    aspect-ratio: 386/292;
   }
 
   @include vp-767 {

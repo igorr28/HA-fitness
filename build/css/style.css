@@ -2231,6 +2231,7 @@ button,
   width: 56.8965517241%;
   background-color: #1c3374;
   overflow: hidden;
+  aspect-ratio: 660/500;
 }
 
 .games__img-wrapper img {
@@ -2434,8 +2435,7 @@ button,
 }
 
 .advantages {
-  background-image: -o-linear-gradient(left, #ffffff 33px, #f8f9fc 33px);
-  background-image: linear-gradient(to right, #ffffff 33px, #f8f9fc 33px);
+  background-color: #f8f9fc;
 }
 
 .advantages__container {
@@ -2525,6 +2525,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  height: 92%;
 }
 
 .advantages__item--comfort {
@@ -2782,7 +2783,7 @@ button,
 
 .comments__container {
   padding-top: 57px;
-  padding-bottom: 98px;
+  padding-bottom: 119px;
 }
 
 .comments__title {
@@ -3129,7 +3130,7 @@ button,
 .main-footer {
   min-height: 108px;
   background-color: #030a1a;
-  padding-top: 41px;
+  padding-top: 43px;
   padding-bottom: 25px;
   color: #ffffff;
 }
@@ -3166,6 +3167,7 @@ button,
 .nav__list {
   margin-top: 3px;
   margin-bottom: 0;
+  margin-left: 30px;
   padding-left: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -3173,29 +3175,20 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+}
+
+.nav__item {
+  margin-bottom: 7px;
 }
 
 .nav__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.nav__item--begin-list {
-  margin-left: auto;
-}
-
-.nav__item--logo {
-  margin-top: -4px;
-}
-
 .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
@@ -3214,8 +3207,7 @@ button,
 }
 
 .socials__list {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: -5px -5.5px;
   padding-left: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -3225,8 +3217,8 @@ button,
   flex-wrap: wrap;
 }
 
-.socials__item:not(:last-child) {
-  margin-right: 11px;
+.socials__item {
+  margin: 5px 5.5px;
 }
 
 .socials__link {
@@ -3566,6 +3558,7 @@ button,
 
   .games__img-wrapper {
     width: 56.9321533923%;
+    aspect-ratio: 386/292;
   }
 
   .coaches__container {
@@ -3591,11 +3584,6 @@ button,
   .coaches__button--next {
     right: 0;
     left: auto;
-  }
-
-  .advantages {
-    background-color: #f8f9fc;
-    background-image: none;
   }
 
   .advantages__container {
@@ -3737,6 +3725,7 @@ button,
 
   .comments__container {
     padding-top: 41px;
+    padding-bottom: 99px;
   }
 
   .comments__title {
@@ -3815,7 +3804,7 @@ button,
   }
 
   .contacts__title {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     margin-left: 0;
   }
 
@@ -3854,8 +3843,16 @@ button,
     font-size: 18px;
   }
 
+  .main-footer {
+    padding-bottom: 41px;
+  }
+
   .main-footer__socials {
     margin-left: 7.6696165192%;
+  }
+
+  .nav__logo {
+    margin-top: 3px;
   }
 
   .nav__list {
@@ -3932,6 +3929,7 @@ button,
   .promo__features {
     width: 38.9655172414%;
     margin-bottom: 34px;
+    padding-top: 124px;
   }
 
   .promo__heading {
@@ -4421,7 +4419,8 @@ button,
   }
 
   .main-footer {
-    padding-bottom: 57px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 
   .main-footer__container {
@@ -4437,20 +4436,7 @@ button,
 
   .nav {
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .nav__logo {
-    margin-right: 0;
-  }
-
-  .nav__list {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     display: block;
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -4458,6 +4444,21 @@ button,
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
     column-gap: 32px;
+  }
+
+  .nav__logo {
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .nav__list {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    display: block;
   }
 
   .nav__item:not(:last-child) {

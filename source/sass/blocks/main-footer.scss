@@ -1,12 +1,17 @@
 .main-footer {
   min-height: 108px;
   background-color: #030a1a;
-  padding-top: 41px;
+  padding-top: 43px;
   padding-bottom: 25px;
   color: $color-default-white;
 
+  @include vp-1199 {
+    padding-bottom: 41px;
+  }
+
   @include vp-767 {
-    padding-bottom: 57px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 }
 

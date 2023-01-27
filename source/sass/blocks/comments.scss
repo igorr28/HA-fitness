@@ -1,9 +1,10 @@
 .comments__container {
   padding-top: 57px;
-  padding-bottom: 98px;
+  padding-bottom: 119px;
 
   @include vp-1199 {
     padding-top: 41px;
+    padding-bottom: 99px;
   }
 
   @include vp-767 {

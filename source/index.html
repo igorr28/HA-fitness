@@ -237,9 +237,13 @@
               </div>
               <div class="games__img-wrapper">
                 <picture>
-                  <source  type="image/webp" srcset="img/content/games.webp 1x, img/content/games@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/games-mobile.webp 1x, img/content/games-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/games-tablet.webp 1x, img/content/games-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/games.webp 1x, img/content/games@2x.webp 2x">
 
-                  <img src="img/content/games.jpg" srcset="img/content/games@2x.jpg 2x" width="762" height="500" alt="Спортсмен" loading="lazy">
+                  <source type="image/jpg" width="290" height="292" media="(max-width: 767px)" srcset="img/content/games-mobile.jpg 1x, img/content/games-mobile@2x.jpg 2x">
+                  <source type="image/jpg" width="386" height="292" media="(max-width: 1199px)" srcset="img/content/games-tablet.jpg 1x, img/content/games-tablet@2x.jpg 2x">
+                  <img src="./img/content/games.jpg" srcset="./img/content/games@2x.jpg 2x" width="660" height="500" loading="lazy" alt="Спортсмен">
                 </picture>
               </div>
             </div>
@@ -638,7 +642,7 @@
                     <div class="form__row">
                       <label class="visually-hidden" for="name">Имя.</label>
                       <input type="text" id="name" name="name" data-validate placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\-\s]+$"
-                        maxlength="15" title="Разрешены буквы, пробелы и дефис" required>
+                        title="Разрешены буквы, пробелы и дефис" required>
                     </div>
                     <div class="form__row">
                       <label class="visually-hidden" for="tel">Телефон.</label>
@@ -686,21 +690,16 @@
       <footer class="main-footer footer">
         <div class="container">
           <div class="main-footer__container">
-            <nav class="nav">
 
-
-              <!-- Nav -->
-              <ul class="nav__list">
-                <li class="nav__item nav__item--logo">
-                  <div class="nav__logo logo">
-                    <a class="logo__link">
-                      <svg class="logo__img logo__img--footer"  width="119" height="23" aria-hidden="true">
-                        <use xlink:href="img/sprite.svg#logo"></use>
-                      </svg>
-                      <span class="visually-hidden">Логотип Фитнесс-центра Supregym.</span>
-                    </a>
-                  </div>
-                </li>
+            <!-- Nav -->
+            <nav class="footer__nav nav">
+              <a class="nav__logo logo">
+                <svg class="logo__img logo__img--footer"  width="119" height="23" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+                <span class="visually-hidden">Логотип Фитнесс-центра Supregym.</span>
+              </a>
+              <ul class="footer__list nav__list">
                 <li class="nav__item nav__item--begin-list">
                   <a href="#advantages" class="nav__link nav__link--begin-list" data-scroll>Услуги</a>
                 </li>
